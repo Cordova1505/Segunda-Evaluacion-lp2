@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-	
+	char repetir= 'Y';
+	do{
 	int num=0; int i=0; int suma_divisores=0;
 	cout<<"Ingrese el numero: "<<endl;
 	cin>>num;
@@ -18,6 +19,9 @@ int main(){
 	
 	else{
 		cout<<"Su numero no es perfecto"<<endl;
-	}
+} cout<<"Quieres volver a hacer la cuenta Y / N: "<<endl;
+cin>>repetir;
+} while (repetir == 'Y');
+
 }
 
